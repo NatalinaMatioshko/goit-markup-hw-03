@@ -34,20 +34,24 @@ img {
   max-width: 100%;
 }
 /*========== NAVIGATION =========*/
-header {
+.hat-head {
   display: flex;
   border-bottom: 1px solid #e7e9fc;
-  width: 1158px;
-  height: 72px;
+  align-items: center;
 }
 .container {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
-.page-navigation {
-  margin: 0;
+
+.hat-head .container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
 }
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -56,6 +60,7 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin: 24px 76px 24px 156px;
 }
 .accent {
   color: #2e2f42;
@@ -66,10 +71,13 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 40px;
 }
-.menu-item {
-  margin: 0;
-}
+
 .menu-link {
   color: #2e2f42;
 }
@@ -95,7 +103,7 @@ header {
 .cont-link:focus {
   color: #404bbf;
 }
-
+/* !!!!!!!!!!!!!!!!! */
 .page-navigation .contacts {
   display: flex;
   margin: 0;
@@ -104,6 +112,7 @@ header {
   flex-direction: row;
 }
 /* ============ MAIN ============*/
+
 /* ======= HERO SECTION ========*/
 .section-hero {
   background: #2e2f42;
