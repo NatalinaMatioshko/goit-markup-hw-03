@@ -3,13 +3,22 @@
 *::after {
   box-sizing: border-box;
 }
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   color: #434455;
   text-align: center;
   align-content: center;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
 }
 h1,
 h2,
@@ -24,21 +33,21 @@ img {
   display: block;
   max-width: 100%;
 }
-ul,
-ol {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
-
+/*========== NAVIGATION =========*/
 header {
   display: flex;
   border-bottom: 1px solid #e7e9fc;
   width: 1158px;
   height: 72px;
 }
-
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.page-navigation {
+  margin: 0;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -48,40 +57,29 @@ header {
   text-transform: uppercase;
   color: #4d5ae5;
 }
-
-.container {
-  width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-.container .contacts-links {
-  display: flex;
-  margin: 0;
-  padding: 24px 156px;
-  gap: 40px;
-  flex-direction: row;
-}
-
 .accent {
   color: #2e2f42;
 }
-
-.head-link {
+.menu {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.first-item {
+.menu-item {
+  margin: 0;
+}
+.menu-link {
   color: #2e2f42;
 }
 
-.first-item:hover,
-.first-item:focus {
+.menu-link:hover,
+.menu-link:focus {
   color: #404bbf;
 }
-.contacts-links {
+/* ========= ADRESSA =======*/
+.contacts {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -89,6 +87,7 @@ header {
   color: #434455;
   font-style: normal;
 }
+
 .cont-link {
   color: #434455;
 }
@@ -97,7 +96,16 @@ header {
   color: #404bbf;
 }
 
-.section-first {
+.page-navigation .contacts {
+  display: flex;
+  margin: 0;
+  padding: 24px 156px;
+  gap: 40px;
+  flex-direction: row;
+}
+/* ============ MAIN ============*/
+/* ======= HERO SECTION ========*/
+.section-hero {
   background: #2e2f42;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -107,7 +115,6 @@ header {
   color: #fff;
   text-align: center;
 }
-
 .main-title {
   font-weight: 700;
   font-size: 56px;
@@ -115,8 +122,7 @@ header {
   letter-spacing: 0.02em;
   color: #fff;
 }
-
-.bttn {
+.top-button {
   font-family: "Roboto", sans-serif;
   background: #4d5ae5;
   font-weight: 500;
@@ -126,12 +132,39 @@ header {
   color: #fff;
   cursor: pointer;
 }
-.bttn:hover,
-.bttn:focus {
+.top-button:hover,
+.top-button:focus {
   background-color: #404bbf;
 }
+/* ======== FIRST SECTION =======*/
 
-.thrd-title {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* ======= SECOND SECTION ==========*/
+.section-second {
+  background-color: #f4f4fd;
+}
+.title-two {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+}
+.title-three {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -147,26 +180,20 @@ header {
   color: #434455;
 }
 
-.scnd-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-  text-transform: capitalize;
-}
-
-.section-third {
-  background-color: #f4f4fd;
-}
-.third-item {
+.second-item {
   background-color: #ffffff;
 }
+/* ===== THIRD SECTION ===== */
+
+/* ======= PIDVAL ========*/
 
 .foo-end {
   background-color: #2e2f42;
 }
+.accentt {
+  color: #f4f4fd;
+}
+
 .main-text-foo {
   font-weight: 400;
   font-size: 16px;
@@ -174,25 +201,3 @@ header {
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
-.accentt {
-  color: #f4f4fd;
-}
-/*section 1*/
-
-/*section 2*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-/*section 3*/
-
-/*section 4*/
