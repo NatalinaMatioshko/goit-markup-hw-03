@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
@@ -5,11 +11,32 @@ body {
   text-align: center;
   align-content: center;
 }
-ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+ul,
+ol {
   list-style-type: none;
 }
 a {
   text-decoration: none;
+}
+
+header {
+  display: flex;
+  border-bottom: 1px solid #e7e9fc;
+  width: 1158px;
+  height: 72px;
 }
 
 .logo {
@@ -21,6 +48,20 @@ a {
   text-transform: uppercase;
   color: #4d5ae5;
 }
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container .contacts-links {
+  display: flex;
+  margin: 0;
+  padding: 24px 156px;
+  gap: 40px;
+  flex-direction: row;
+}
+
 .accent {
   color: #2e2f42;
 }
@@ -136,3 +177,22 @@ a {
 .accentt {
   color: #f4f4fd;
 }
+/*section 1*/
+
+/*section 2*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*section 3*/
+
+/*section 4*/
