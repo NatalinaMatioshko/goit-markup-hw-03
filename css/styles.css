@@ -51,7 +51,10 @@ img {
   padding: 0 15px;
   display: flex;
 }
-
+.page-navigation {
+  display: flex;
+  align-items: center;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -60,7 +63,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin: 24px 76px 24px 156px;
+  margin: 2px 76px 24px 0;
 }
 .accent {
   color: #2e2f42;
@@ -77,9 +80,18 @@ img {
   flex-direction: row;
   gap: 40px;
 }
-
+.menu-item {
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-left: 76px;
+  padding: 14px 0;
+}
 .menu-link {
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .menu-link:hover,
@@ -95,7 +107,21 @@ img {
   color: #434455;
   font-style: normal;
 }
-
+.cont-list {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin-top: 24px;
+  margin-right: 156px;
+  margin-bottom: 24px;
+  margin-left: 332px;
+}
 .cont-link {
   color: #434455;
 }
@@ -103,14 +129,7 @@ img {
 .cont-link:focus {
   color: #404bbf;
 }
-/* !!!!!!!!!!!!!!!!! */
-.page-navigation .contacts {
-  display: flex;
-  margin: 0;
-  padding: 24px 156px;
-  gap: 40px;
-  flex-direction: row;
-}
+
 /* ============ MAIN ============*/
 
 /* ======= HERO SECTION ========*/
