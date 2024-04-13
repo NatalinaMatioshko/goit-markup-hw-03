@@ -31,6 +31,7 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -132,7 +133,7 @@ img {
 
 /* ======= HERO SECTION ========*/
 .section-hero {
-  background: #2e2f42;
+  background-color: #2e2f42;
   font-family: "Roboto", sans-serif;
   font-weight: 700px;
   font-size: 16px;
